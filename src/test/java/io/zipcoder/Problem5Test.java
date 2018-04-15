@@ -15,8 +15,22 @@ public class Problem5Test {
         String actual = Problem5.reverseString(input);
 
         //then
-        String given = "notgnimliW edoC piZ evol I";
-        Assert.assertEquals(actual, given);
+        String expected = "notgnimliW edoC piZ evol I";
+        Assert.assertEquals(actual, expected);
+
+    }
+
+    @Test
+    public void testReverseStringTwo(){
+        //given
+        String input = "My name is Keith";
+
+        //when
+        String actual = Problem5.reverseString(input);
+
+        //then
+        String expected = "htieK si eman yM";
+        Assert.assertEquals(actual, expected);
 
     }
 }
